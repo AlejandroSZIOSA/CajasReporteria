@@ -16,16 +16,33 @@
         width: 200px;
         padding: 10px 15px; /* Top + Bottom */
         text-align: center;
+
+        transition: 0.3s; /* Animations */
       }
 
       .red {
         border-left: solid 2px red;
       }
-      .green {
-        border-left: solid 2px #00ff00;
+
+      .red:hover {
+        transform: scale(1.1, 1.1);
       }
+
+      .green {
+        border-left: solid 2px green;
+      }
+
+      .green:hover {
+        /*  10px=Horizontal derecha / 2px=hacia abajo  */
+        box-shadow: 10px 12px 8px rgba(0, 0, 0, 0.2);
+      }
+
       .blue {
         border-left: solid 2px rgb(47, 0, 255);
+      }
+
+      .blue:hover {
+        background-color: rgb(144, 144, 255);
       }
     </style>
   </head>
